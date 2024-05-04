@@ -1,0 +1,179 @@
+/* General Styles */
+
+/* Set basic styles for body */
+body {
+    font-family: Arial, sans-serif; /* Set font family */
+    background-color: #f2f2f2; /* Set background color */
+    color: #333; /* Set text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for headers */
+header {
+    background-color: #4d4c44c9; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center align text */
+}
+
+/* Styles for main navigation */
+#main-nav {
+    background-color: #a3a593bb; /* Set background color */
+    padding: 10px; /* Add padding */
+    font-size: 18px; /* Set font size */
+    text-align: center; /* Center align text */
+}
+
+/* Styles for main navigation list */
+#main-nav ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for main navigation list items */
+#main-nav ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Add right margin */
+}
+
+/* Styles for main navigation links */
+#main-nav ul li a {
+    color: #fff; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Styles for main navigation links on hover */
+#main-nav ul li a:hover {
+    color: #ffcc00; /* Change link color on hover */
+}
+
+/* Styles for specific headers */
+#index-header {
+    background-color: #535353; /* Set background color */
+}
+
+#contact-header {
+    background-color: #5f2c0a; /* Set background color */
+}
+
+/* Styles for sections */
+section {
+    padding: none; /* Remove padding */
+    text-align: center; /* Center align text */
+}
+
+/* Left align text within sections */
+section * {
+    text-align: left;
+}
+
+/* Move list item markers inside the list */
+section ul {
+    list-style-position: inside;
+}
+
+/* Styles for aside */
+aside {
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Set background color */
+    border-left: 5px solid #333; /* Add left border */
+}
+
+/* Styles for aside headings */
+aside h2 {
+    color: #333; /* Set heading color */
+    border-bottom: 2px solid #00ff6a; /* Add bottom border */
+    padding-bottom: 10px; /* Add bottom padding */
+}
+
+/* Styles for aside lists */
+aside ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin-top: 15px; /* Add top margin */
+}
+
+/* Styles for aside list items */
+aside ul li {
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Styles for aside links */
+aside ul li a {
+    color: #000000; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Styles for aside links on hover */
+aside ul li a:hover {
+    color: #0066ff; /* Change link color on hover */
+}
+
+/* Styles for footer */
+footer {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center align text */
+}
+
+/* Styles for Specific Pages */
+
+/* Styles for main page header */
+header h1 {
+    font-size: 36px; /* Set font size */
+}
+
+/* Styles for form container */
+.form-container {
+    overflow: hidden; /* Clear floats */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Styles for form */
+.form-container form {
+    float: left; /* Float the form to the left */
+    margin-right: 20px; /* Add right margin */
+}
+
+/* Styles for form image */
+.form-image {
+    position: relative; /* Set image position */
+    float: bottom; /* Float the image to the bottom */
+    margin-left: 20px; /* Add left margin */
+    max-width: 100%; /* Ensure the image does not exceed its container */
+}
+
+/* Styles for University of Michigan image */
+#umich-img {
+    position: relative; /* Set image position */
+}
+
+/* Social Media */
+
+/* Styles for social media sidebar */
+.social-media-sidebar {
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Set top position */
+    right: 0; /* Set right position */
+    background-color: #0080ff; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-left: 1px solid #ccc; /* Add left border */
+    box-shadow: -2px 0 5px rgba(212, 209, 4, 0.1); /* Add shadow */
+}
+
+/* Styles for social media links */
+.social-media-sidebar a {
+    display: inline-block; /* Display links as blocks */
+    margin-right: 10px; /* Add right margin */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set link color */
+}
+
+/* Styles for social media links on hover */
+.social-media-sidebar a:hover {
+    color: #eeff00; /* Change link color on hover */
+}

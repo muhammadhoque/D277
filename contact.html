@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Contact Us</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- JavaScript for form validation -->
+    <script>
+        window.onload = function() {
+            // Function to run when the window is loaded
+            var form = document.getElementById("contactForm");
+
+            // Event listener for form submission
+            form.addEventListener("submit", function(event) {
+                // Get form fields
+                var fname = document.getElementById("fname");
+                var lname = document.getElementById("lname");
+                var email = document.getElementById("email");
+                var confirmEmail = document.getElementById("confirm_email");
+                var message = document.getElementById("message");
+
+                // Check if any field is empty
+                if (fname.value === '' || lname.value === '' || email.value === '' || confirmEmail.value === '' || message.value === '') {
+                    alert("Please fill out all fields.");
+                    event.preventDefault(); // Prevent form submission
+                } else if (email.value !== confirmEmail.value) {
+                    // Check if emails match
+                    alert("Emails do not match.");
+                    event.preventDefault(); // Prevent form submission
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <!-- Header section -->
+    <header id="contact-header">
+        <!-- Main heading -->
+        <h1>Contact Us</h1>
+        <!-- Subheading -->
+        <p>Feel free to reach out to us with any questions or inquiries!</p>
+    </header>    
+    
+    <!-- Navigation section -->
+    <nav id="main-nav">
+        <!-- Unordered list of navigation links -->
+        <ul>
+            <!-- Individual list items with links -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lansing.html">Lansing</a></li>
+            <li><a href="annarbor.html">Ann Arbor</a></li>
+            <li><a href="detroit.html">Detroit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Form section -->
+    <div class="form-container">
+        <!-- Contact form -->
+        <form id="contactForm" action="submit.php" method="POST">
+            <!-- First name input -->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Your first name.." required><br>
+            <!-- Last name input -->
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Your last name.." required><br>
+            <!-- Email input -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your email.." required><br>
+            <!-- Confirm email input -->
+            <label for="confirm_email">Confirm Email:</label><br>
+            <input type="email" id="confirm_email" name="confirm_email" placeholder="Confirm your email.." required><br>
+            <!-- Message input -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea><br>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+        </form>
+        <!-- Image related to contact form -->
+        <img src="contact-us.jpg" alt="Contact Form" class="form-image">
+    </div>
+    
+    <!-- Social media sidebar -->
+    <div class="social-media-sidebar">
+        <!-- Social media links -->
+        <a href="https://www.facebook.com/puremichigan" target="_blank">Facebook</a>
+        <a href="https://instagram.com/puremichigan/" target="_blank">Instagram</a>
+        <a href="https://pinterest.com/puremichigan/" target="_blank">Pinterest</a>
+        <a href="https://tiktok.com/@puremichigan" target="_blank">TikTok</a>
+        <a href="https://twitter.com/puremichigan" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/user/puremichigan" target="_blank">YouTube</a>
+    </div>
+    
+    <!-- Aside section displaying contact information -->
+    <aside>
+        <!-- Heading -->
+        <h2>Contact Information</h2>
+        <!-- Paragraphs with contact details -->
+        <p>Address: 123 Main Street, Anytown, MI 12345</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@example.com</p>
+    </aside>
+   
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 Michigan Website</p>
+    </footer>
+</body>
+</html>
